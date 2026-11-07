@@ -1,0 +1,6 @@
+{
+  "name": "MSI Group Awards - Sistem Penilaian Dewan Juri",
+  "description": "Aplikasi web penilaian awards MSI Group dengan validasi skor, kalkulasi bobot dinamis, rekapitulasi juri, dan pelaporan resmi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
