@@ -15,11 +15,12 @@ import { OfficialReportModal } from './components/OfficialReportModal';
 import { EvaluationDetailModal } from './components/EvaluationDetailModal';
 import { AddParticipantModal } from './components/AddParticipantModal';
 import { RiwayatPanel } from './components/RiwayatPanel';
+import { Logo } from './components/Logo';
 
 const Screen: React.FC<{ title: string; children?: React.ReactNode }> = ({ title, children }) => (
   <div className="min-h-screen grid place-items-center p-6 bg-slate-50">
     <div className="max-w-md text-center space-y-3">
-      <div className="w-10 h-10 mx-auto rounded-lg bg-[#0f1b2d] text-white grid place-items-center text-sm font-bold">MSI</div>
+      <Logo className="w-12 h-12 mx-auto" />
       <h1 className="font-display text-2xl text-slate-900">{title}</h1>
       <div className="text-sm text-slate-600 leading-relaxed">{children}</div>
     </div>

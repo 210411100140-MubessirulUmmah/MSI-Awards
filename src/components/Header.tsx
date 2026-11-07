@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { BarChart3, ChevronDown, Download, FileSpreadsheet, History, LogOut, Plus, Printer, RotateCcw, Scale } from 'lucide-react';
 import { UserAccount } from '../types/scoring';
+import { Logo } from './Logo';
 
 export type AdminTab = 'dashboard' | 'recap' | 'weights' | 'log';
 
@@ -49,7 +50,7 @@ export const Header: React.FC<HeaderProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="h-16 flex items-center justify-between gap-4">
           <div className="flex items-center gap-3 min-w-0">
-            <div className="w-9 h-9 shrink-0 rounded-lg bg-[#0f1b2d] text-white grid place-items-center text-[13px] font-bold">MSI</div>
+            <Logo className="w-9 h-9" />
             <div className="leading-tight min-w-0">
               <div className="text-[15px] font-semibold text-slate-900 truncate">MSI Group Awards</div>
               <div className="text-xs text-slate-500 truncate">{isAdmin ? 'Panel administrator' : 'Portal dewan juri'}</div>

@@ -14,6 +14,7 @@ import {
   Judge,
 } from '../types/scoring';
 import { formatScoreID } from '../utils/calculations';
+import { Logo } from './Logo';
 
 interface OfficialReportModalProps {
   isOpen: boolean;
@@ -89,9 +90,7 @@ export const OfficialReportModal: React.FC<OfficialReportModalProps> = ({
           {/* Header Kop Surat */}
           <div className="border-b-2 border-slate-900 pb-5 flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="w-14 h-14 rounded-xl bg-slate-900 text-amber-400 font-black text-xl flex items-center justify-center border-2 border-amber-400">
-                MSI
-              </div>
+              <Logo className="w-14 h-14" fallbackClassName="rounded-xl bg-slate-900 text-amber-400 font-black text-xl border-2 border-amber-400" />
               <div>
                 <h1 className="text-xl font-extrabold uppercase tracking-tight text-slate-900">
                   MSI Group Innovation & Excellence Awards 2026

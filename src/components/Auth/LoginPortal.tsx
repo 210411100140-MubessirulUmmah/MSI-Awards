@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { AlertCircle, ArrowRight, Eye, EyeOff, Loader2 } from 'lucide-react';
+import { Logo } from '../Logo';
 
 interface LoginPortalProps {
   onSignIn: (email: string, password: string) => Promise<string | null>;
@@ -28,7 +29,7 @@ export const LoginPortal: React.FC<LoginPortalProps> = ({ onSignIn, notice }) =>
     <div className="min-h-screen grid lg:grid-cols-[1.05fr_1fr] bg-white">
       <aside className="hidden lg:flex flex-col justify-between bg-[#0f1b2d] text-white p-14">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-lg bg-white/10 grid place-items-center text-sm font-bold">MSI</div>
+          <Logo className="w-10 h-10" fallbackClassName="rounded-lg bg-white/10 text-sm font-bold" />
           <span className="text-sm font-medium text-slate-200">MSI Group</span>
         </div>
         <div>
@@ -44,7 +45,7 @@ export const LoginPortal: React.FC<LoginPortalProps> = ({ onSignIn, notice }) =>
       <main className="flex items-center justify-center p-6 sm:p-12">
         <div className="w-full max-w-sm">
           <div className="lg:hidden flex items-center gap-3 mb-10">
-            <div className="w-10 h-10 rounded-lg bg-[#0f1b2d] text-white grid place-items-center text-sm font-bold">MSI</div>
+            <Logo className="w-10 h-10" fallbackClassName="rounded-lg bg-[#0f1b2d] text-white text-sm font-bold" />
             <span className="font-semibold text-slate-900">MSI Group Awards</span>
           </div>
 
